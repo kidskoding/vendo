@@ -9,11 +9,7 @@
     in {
       devShells.x86_64-linux.default = pkgs.mkShell {
         packages = with pkgs; [
-          # ruby + bundler only. deliberately NOT ps.rails: nixpkgs' rails gem
-          # lags rubygems by months, and taking it from here silently pins every
-          # project this template bootstraps to whatever nixpkgs last packaged.
-          # rails comes from rubygems in the shellHook instead.
-          ruby
+          ruby_3_4
 
           # native-gem build deps
           libyaml
