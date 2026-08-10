@@ -7,9 +7,8 @@
 # Ignore bundler config.
 /.bundle
 
-# Ignore all environment files (except templates).
+# Ignore all environment files.
 /.env*
-!/.env*.erb
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -31,11 +30,10 @@
 
 /public/assets
 
-# Ignore master key for decrypting credentials and more.
-/config/master.key
+# Ignore key files for decrypting credentials and more.
+/config/*.key
 
-# Bundler install path (vendor/bundle is 152MB — never commit).
 /vendor/bundle
-
-# direnv cache.
-/.direnv/
+/.direnv
+/.ruby-lsp
+/.nix-gems
